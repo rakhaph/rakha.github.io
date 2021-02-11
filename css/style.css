@@ -1,0 +1,71 @@
+html{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    margin-bottom:120px ;
+  margin-top: 30px;
+}
+.jumbotron{
+    height: 400px;
+    background-image: url(../img/backgroun.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: 0 -100px;
+    color: #eaeaea;
+    overflow:hidden ;
+}
+.jumbotron h1,.jumbotron p{
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.jumbotron img{
+    width: 200px;
+    border: 3px solid #eaeaea;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+hr{
+    width: 200px;
+    border-top: 2px solid black;
+}
+section{
+    min-height: 600px;
+}
+.kiri, .kanan{
+    opacity: 0;
+    transform: translate(-50px,0);
+    transition: 5s;
+}
+.kanan{
+    transform: translate(50px,0);
+
+}
+.kiri.pMuncul,.kanan.pMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.porfolio{
+background-color: rgb(221, 221, 221);
+}
+.porfolio .thumbnail{
+    opacity: 0;
+    transition: .5s;
+    transform: translate(0,-40px);
+}
+.porfolio .thumbnail.muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.contact{
+    min-height: 800px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: gainsboro;
+    padding-top: 30px;
+}
+footer p{
+    color:brown;
+font-size: 0.8em;
+}
